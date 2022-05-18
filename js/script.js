@@ -22,10 +22,10 @@ $(function() {
         $('.back-to-top').bind("click", function() {
             $('html, body').animate({
                 scrollTop: 0
-            }, 1200);
+            }, 100);
             return !1
         })
     });
+    
 
-    // var rellax = new Rellax('.rellax');
 });

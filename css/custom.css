@@ -55,6 +55,49 @@ a:hover, a:focus, .btn:hover, .btn:focus{ box-shadow: none; text-decoration: non
 .w-100vw{width: 100vw !important;}
 .h-100vh{height: 100vh !important;}
 
+.btn-buttonlink {
+    position: relative;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-decoration: none;
+    border: 0;
+}
+.btn-buttonlink:hover{
+    color: rgba(var(--primaryrgb-color), 50%);
+    border: 0;
+}
+.btn-buttonlink::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    -webkit-transition: -webkit-transform 150ms linear;
+    transition: -webkit-transform 150ms linear;
+    transition: transform 150ms linear;
+    transition: transform 150ms linear, -webkit-transform 150ms linear;
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-transform-origin: 0 50%;
+    -ms-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    will-change: transform;
+}
+.btn-buttonlink:hover::after, .btn-buttonlink:focus::after{
+    color: currentColor;
+    -webkit-transform: scale(0, 1);
+    -ms-transform: scale(0, 1);
+    transform: scale(0, 1);
+    -webkit-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+}
+
+
 .btn-link{
 	text-decoration: none;
 	display: flex;
@@ -128,20 +171,22 @@ a:hover, a:focus, .btn:hover, .btn:focus{ box-shadow: none; text-decoration: non
     position: fixed;
     bottom: 20px;
     right: 20px;
-    color: #fff !important;
-    font-weight: bold;
+    color: #ffffff !important;
     z-index: 9999;
     display: none;
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
     border-radius: 34px 8px 34px 34px;
-    background: var(--primary-color);
-    border: 2px solid var(--primary-color);
+    background: linear-gradient(90deg, hsla(225, 89%, 47%, 1) 0%, hsla(192, 95%, 50%, 1) 100%);
+    border: 0;
+}
+.back-to-top:hover{
+    background: linear-gradient(-90deg, hsla(225, 89%, 47%, 1) 0%, hsla(192, 95%, 50%, 1) 100%);  
 }
 .header{
 	background-color:  transparent;
-	   -moz-transition: all 0.4s;
+	 -moz-transition: all 0.4s;
     transition: all 0.4s;
     -webkit-transition-delay: 0s;
     -moz-transition-delay: 0s;
@@ -378,7 +423,7 @@ a:hover, a:focus, .btn:hover, .btn:focus{ box-shadow: none; text-decoration: non
 }
 /*=============================== BANNER END ================================*/
 /*=============================== ABOUT START ===============================*/
-.about-wrap{
+/*.about-wrap{
 	display: flex;
 	align-items: stretch;
 }
@@ -415,68 +460,60 @@ a:hover, a:focus, .btn:hover, .btn:focus{ box-shadow: none; text-decoration: non
 	font-weight: 400;
 	font-size: 0.85rem;
 	color: var(--text-dark);
-}
+}*/
 /*================================ ABOUT END ================================*/
 
-.how-play-section{}
-.how-play-section .section-title{
+/*============================== SECTION START ==============================*/
+.section{}
+.section .section-title{
     font-weight: bold;
     font-size: 1.85rem;
     color: var(--text-dark);
-    text-align: center;
 }
-.how-play-section .section-subtitle{
-		font-weight: 400;
+.section .section-subtitle{
+	font-weight: 400;
     font-size: 1rem;
     text-transform: lowercase;
-    text-align: center;
 }
 
-.tab-wrapper{
+/*=============================== SECTION END ===============================*/
+/*============================== SLIDER START ===============================*/
+.swiperslide-inner{
 	display: flex;
-	align-items: stretch;
-	/*gap : 0 1rem*/
+	align-items: flex-start;
+	padding: 1rem;
 }
-.tab-wrapper .nav{
-	width: 200px;
-	gap: 1.15rem 0;
-  justify-content: center;
+.swiperslide-inner .sliderimg{
+	width: 300px;
+	height: 300px;
 }
-.tab-wrapper .tab-content{
-	left: -20px;
-	flex: 1;
-}
-.tab-wrapper .nav button{
-	color: var(--text-dark);
-	font-weight: 500;
-	letter-spacing: var(--letterspacing-small);
-	box-shadow: 0 0 0 3px var(--bs-gray-200);
-	background-color:  var(--bs-gray-400);
-}
-.tab-wrapper .nav button.active{
-	box-shadow: 0 0 0 3px rgba(var(--primaryrgb-color), 0.25);
-	background-color:  var(--primary-color);
-}
-.tab-inner{
-	display:  flex;
-	align-items:  stretch;
-	gap:  1rem;
-}
-.tab-inner .figure{
-	margin:  0px;
-}
-.tab-inner .figure img{
+.swiperslide-inner img{
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
-	margin:  0px;
+	object-fit: contain;
 }
-.tab-inner .tab-title{
-	font-weight: bold;
-  font-size: 1.35rem;
-  color: var(--text-dark);
+.swiperslide-inner .slidercontent{
+	flex: 1;
 }
-.tab-inner .tab-desc{
+.swiperslide-inner .slidercontent .slidertitle{
+	font-weight: 600;
+    font-size: 1.45rem;
+    color: var(--text-dark);
+}
+.swiperslide-inner .slidercontent .sliderdesc{
 	font-weight: 400;
-  font-size: 1rem;
+    font-size: .95rem;
+    color: var(--text-dark);
 }
+
+@media screen and (max-width: 768px){
+	.swiperslide-inner{
+		flex-direction: column;
+		gap: 1rem
+	}
+	.swiperslide-inner .sliderimg{
+		width: 100%;
+		height: 250px;
+	}
+}
+/*=============================== SLIDER END ================================*/

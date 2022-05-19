@@ -20,7 +20,10 @@
       <img src="img/itsgametime.png" class="img-fluid" alt="">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsCollapse" aria-controls="navbarsCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <i class="bi bi-list"></i>
+      <!-- <i class="bi bi-list"></i> -->
+      <span></span>
+      <span></span>
+      <span></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarsCollapse">
@@ -75,6 +78,7 @@
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
               <button type="button" class="btn btn-button shadow-lg hvr-float-shadow">
                 <span class="btn-text">Buy Now</span>
+                <i class="bi bi-cart text-white ms-2"></i>
               </button>
               <button type="button" class="btn btn-link hvr-float-shadow">
                 <span class="btn-text">How to Play</span>
@@ -93,8 +97,10 @@
   <div class="container">
     <div class="row g-5">
       <div class="col-12 col-md-6 order-1 order-lg-0">
-        <span class="badge rounded-pill text-bg-light section-subtitle mb-3">About us</span>
-        <h2 class="section-title">Big Lorem Ipsum About the company</h2>
+        <div class="section-heading text-left">
+          <h2 class="section-title">About us</h2>
+          <h3 class="section-subtitle text-muted">Who we are</h3>
+        </div>
         <p class="text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, dolores, id laboriosam dolorem voluptatem ullam necessitatibus aut delectus nesciunt. Ratione repudiandae impedit reiciendis iure a fugit, inventore commodi nulla hic. ipsum dolor sit amet consectetur adipisicing, elit. Blanditiis inventore cupiditate ex sapiente totam? Voluptas magnam quo sint mollitia facere deserunt laborum error, quod ab nihil inventore earum recusandae repellat?</p>
         <a class="btn btn-buttonlink p-0" href="#">
           Learn more
@@ -115,8 +121,10 @@
   <div class="container">
     <div class="row mb-4">
       <div class="col-12 text-center">
-        <h3 class="section-title">Products</h3>
-        <h3 class="section-subtitle text-muted">Lists fo Products</h3>
+        <div class="section-heading text-center">
+          <h3 class="section-title">Products</h3>
+          <h3 class="section-subtitle text-muted">Lists fo Products</h3>
+        </div>
       </div>
     </div>
     <div class="row justify-content-center">
@@ -203,19 +211,115 @@
 
 <section class="section py-5" id="sectioncontact">
   <div class="container">
+    <div class="row mb-4">
+      <div class="col-12 text-center">
+        <div class="section-heading text-center">
+          <h3 class="section-title">Contact</h3>
+          <h3 class="section-subtitle text-muted">Connect with us here</h3>
+        </div>
+      </div>
+    </div>
     <div class="row">
-      <h1 class="display-1">Contact section</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, fugiat. Recusandae officiis a dolore molestiae saepe ducimus aliquid dolores impedit. Quod ab incidunt mollitia, iusto veritatis odio officiis ullam itaque?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, fugiat. Recusandae officiis a dolore molestiae saepe ducimus aliquid dolores impedit. Quod ab incidunt mollitia, iusto veritatis odio officiis ullam itaque?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, fugiat. Recusandae officiis a dolore molestiae saepe ducimus aliquid dolores impedit. Quod ab incidunt mollitia, iusto veritatis odio officiis ullam itaque?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, fugiat. Recusandae officiis a dolore molestiae saepe ducimus aliquid dolores impedit. Quod ab incidunt mollitia, iusto veritatis odio officiis ullam itaque?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, fugiat. Recusandae officiis a dolore molestiae saepe ducimus aliquid dolores impedit. Quod ab incidunt mollitia, iusto veritatis odio officiis ullam itaque?</p>
+      <div class="col-12 col-md-6">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi doloribus voluptate velit sint nam, distinctio fuga quae quisquam est temporibus, non quaerat exercitationem tenetur cum vel ad impedit blanditiis magni!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, fugiat. Recusandae officiis a dolore molestiae saepe ducimus aliquid dolores impedit. Quod ab incidunt mollitia, iusto veritatis odio officiis ullam itaque?</p>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="form-card card shadow">
+          <div class="card-header">
+            <h5 class="my-2 card-title">Enquire Now</h5>
+          </div>
+          <div class="card-body">
+            <div class="input-group">  
+              <span class="input-group-text">
+                <i class="bi bi-person"></i>
+              </span>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="" placeholder=".">
+                <label for="floatingInput">Full Name</label>
+              </div>
+            </div>
+            <div class="input-group">  
+              <span class="input-group-text">
+                <i class="bi bi-at"></i>
+              </span>
+              <div class="form-floating">
+                <input type="email" class="form-control" id="" placeholder=".">
+                <label for="floatingInput">Email Address</label>
+              </div>
+            </div>
+            <div class="input-group">  
+              <span class="input-group-text">
+                <i class="bi bi-phone"></i>
+              </span>
+              <div class="form-floating">
+                <input type="number" class="form-control" id="" placeholder=".">
+                <label for="floatingInput">Mobile Number</label>
+              </div>
+            </div>
+            <div class="input-group">  
+              <span class="input-group-text">
+                <i class="bi bi-chat-right-dots"></i>
+              </span>
+              <div class="form-floating">
+                <textarea name="" id="" class="form-control" style="height: 100px" placeholder="."></textarea>
+                <label for="floatingTextarea">Message</label>
+              </div>
+            </div>
+            <div class="d-grid">
+              <button class="btn btn-button hvr-float-shadow py-3">
+                <span class="btn-text">Submit</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
+<footer class="footer">
+  <div class="footer-social-inner">
+    <h3 class="social-heading">Connect via Social Links</h3>
+    <ul class="social-list">
+      <li>
+       <a class="social-link hvr-float-shadow" href="#">
+        <i class="bi bi-facebook"></i> 
+        <span class="social-text">Facebook</span>
+       </a>
+      </li>
+      <li>
+       <a class="social-link hvr-float-shadow" href="#">
+        <i class="bi bi-instagram"></i> 
+        <span class="social-text">Instagram</span>
+       </a>
+      </li>
+      <li>
+       <a class="social-link hvr-float-shadow" href="#">
+        <i class="bi bi-youtube"></i> 
+        <span class="social-text">Youtube</span>
+       </a>
+      </li>
+      <li>
+       <a class="social-link hvr-float-shadow" href="#">
+        <i class="bi bi-twitter"></i> 
+        <span class="social-text">Twitter</span>
+       </a>
+      </li>
+    </ul>
+  </div>
+  <div class="footer-inner">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p class="m-0 copy">2022 © <a class="btn btn-link hvr-float-shadow" href="index.html">IT'S GAMETIME</a>, All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
 <a href="#" class="btn btn-lg back-to-top" role="button">
-  <span class="bi bi-arrow-bar-up"></span>
+  <i class="bi bi-arrow-bar-up"></i>
 </a>
 
 
@@ -224,6 +328,11 @@
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/script.js"></script>
 <script src="js/swiper-bundle.min.js"></script>
+<script>
+const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+  target: '#navbar-header'
+})  
+</script>
 <script>
   var swiper = new Swiper(".mySwiper", {
     direction: 'horizontal',

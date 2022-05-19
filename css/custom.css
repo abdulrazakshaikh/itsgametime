@@ -26,11 +26,11 @@
 }
 /*================================ VARIABLES ================================*/
 /*============================= SCROLLBAR START =============================*/
-body{
+/*body{
   overflow-x: hidden;
   overflow-y: auto;
 
-}
+}*/
 body::-webkit-scrollbar{
     width: 5px;   
 }
@@ -45,7 +45,6 @@ body{
   padding: 0px !important;
   letter-spacing:  var(--letterspacing-small);
   color: var(--text-dark); ;
-  position:  relative;
 }
 a{
 	color: var(--primary-color);

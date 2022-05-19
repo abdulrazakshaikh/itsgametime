@@ -45,6 +45,7 @@ body{
   padding: 0px !important;
   letter-spacing:  var(--letterspacing-small);
   color: var(--text-dark); ;
+  position:  relative;
 }
 a{
 	color: var(--primary-color);
@@ -417,6 +418,9 @@ a:hover, a:focus, .btn:hover, .btn:focus{ box-shadow: none; text-decoration: non
 }
 
 @media screen and (max-width:  990px){
+	.page-header .heading{
+		text-align: center;
+	}
 	.page-header .heading .title{
 		font-size: 3.5rem;
 	}

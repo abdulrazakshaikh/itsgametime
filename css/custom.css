@@ -684,4 +684,49 @@ a:hover, a:focus, .btn:hover, .btn:focus{ box-shadow: none; text-decoration: non
 	transform: scale(.7) translateY(-0.5rem) translateX(0.15rem);
 	font-weight: 500;
 }
+
+.contact-information{
+	display:  flex;
+	flex-direction:  column;
+	gap: 2.5rem 0;
+	padding: 25px 0;
+}
+.contact-information .information-item{
+	display:  flex;
+	align-items: center;
+	gap: .15rem;
+}
+.contact-information .information-item .information-icon{
+	width: 54px;
+	height: 54px;
+	display:  flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+	padding: .5rem;
+	/*background-color: rgba(var(--primaryrgb-color), 0.05);*/
+}
+.contact-information .information-item .information-icon i{
+	font-size: 1.85rem;
+	/*color: var(--primary-color);*/
+	color: rgba(var(--primaryrgb-color), 0.65);
+}
+.contact-information .information-item .information-cont{
+	flex:  1;
+}
+.contact-information .information-item .information-cont .information-label{
+	font-size: .85rem;
+	font-weight: 400;
+	color:  var(--bs-gray-600);
+	margin-bottom:  .15rem;
+}
+.contact-information .information-item .information-cont .information-link{
+	font-size: 1.35rem;
+	font-weight: 700;
+	color: var(--text-dark);
+}
+.contact-information .information-item .information-cont .information-link:hover{
+	color: var(--primary-color);
+
+}
 /*=============================== CONTACT END ===============================*/

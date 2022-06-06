@@ -1,4 +1,10 @@
 $(function() {
+    $(document).ready(function() {
+        $(".navbar-nav li a").click(function(e) {
+            $(".navbar-collapse").collapse('hide')
+        })
+    });
+
 	$(window).scroll(function() {
         if ($(window).scrollTop() >= 20) {
             $('.header').addClass('stickheader');
